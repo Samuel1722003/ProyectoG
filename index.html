@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Css/StyleLogin.css">
+    <script src="https://kit.fontawesome.com/73e64c23ef.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggin</title>
+</head>
+<body>
+    <form action="login.php" method="post">
+        <section>
+            <div class="contenedor">
+                <div class="formulario">
+                    <form action="#">
+                        <h2>Iniciar Sesion</h2>
+                        <div class="input-contenedor">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" required name="email">
+                            <label for="#">Email</label>
+                        </div>
+                        <div class="input-contenedor">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" required name="password">
+                            <label for="#">Password</label>
+                        </div>
+                        <div class="olvidar">
+                            <label for="#">
+                                <input type="checkbox">Recordar
+                                <a href="#">Olvide la contraseña</a>
+                            </label>
+                        </div>
+                    </form>
+                    <div>
+                        <button>Acceder</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</body>
+</html>

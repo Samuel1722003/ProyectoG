@@ -1,0 +1,112 @@
+html, body {
+    height: 100%; /* Asegúrate de que el html y el body ocupen toda la altura */
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("../../imagen/Tec.jpg") no-repeat center center fixed; /* Centra y fija el fondo */
+    background-size: cover; /* Asegúrate de que cubra toda la pantalla */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+	height: 10%;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    color: white;
+}
+
+.logo-user {
+    display: flex;
+    align-items: center;
+}
+
+.logo-user img {
+    height: 100px; /* Ajusta la altura del logo */
+    margin-right: 20px;
+}
+
+.user-info h2, 
+.user-info p {
+    margin: 0;
+}
+.nav-options {
+    display: flex;
+}
+.nav-options a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con opacidad */
+}
+
+.nav-options a:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo al pasar el mouse */
+}
+
+/*Tablas*/
+table {
+    width: calc(100% - 80px); /* Ancho de la tabla, restando 40px de cada lado */
+    max-width: 1000px; /* Ancho máximo para la tabla */
+    margin: 20px auto; /* Centrar la tabla y añadir 20px de margen arriba y abajo */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para darle profundidad */
+    table-layout: auto; /* Permitir que las celdas se ajusten según el contenido */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Línea sutil entre filas */
+    overflow: hidden; /* Evitar el desbordamiento del contenido */
+    white-space: nowrap; /* Evitar el salto de línea en celdas */
+    text-overflow: ellipsis; /* Mostrar "..." si el contenido es demasiado largo */
+}
+
+th {
+    background-color: #666; /* Color gris oscuro para la cabecera */
+    color: white; /* Texto blanco */
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    color: #333; /* Color del texto en contenido */
+}
+
+tr:nth-child(even) td {
+    background-color: rgba(240, 240, 240, 0.9); /* Fila alterna con gris claro y opacidad */
+}
+
+tr:hover td {
+    background-color: rgba(200, 200, 200, 0.9); /* Efecto hover para filas */
+}
+
+
+button {
+    background-color: #ff6666; /* Botón de eliminar en rojo */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Efecto hover en el botón */
+}
+
+.header-container {
+    display: flex; /* Usa flexbox para alinear elementos en una fila */
+    flex-direction: column; /* Coloca elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    margin: 0; /* Sin margen alrededor */
+    padding: 10px 0; /* Espacio arriba y abajo del contenedor */
+    margin-bottom: 20px; /* Espacio entre el contenedor y la tabla */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
